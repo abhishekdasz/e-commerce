@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    background: antiquewhite;
+}
+.header .logo
+{
+    padding: 0px 30px;
+}
+.NavMenu .NavMenu-list
+{
+    display: flex;
+    list-style: none;
+}
+.NavMenu .NavMenu-list li
+{
+    padding: 10px 30px;
+}
+.mob-nav-icons[name="close-outline"]
+{
+    display: none;
+}
+.mob-navbar
+{
+    display: none;
+}
+
+
+@media(max-width:980px)
+{
+    .header
+    {
+        position: relative;
+    }
+    .NavMenu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active .NavMenu .NavMenu-list
+    {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .NavMenu-list
+    {
+        display: none;
+    }
+    .active .mob-nav-icons[name="menu-outline"]
+    {
+        display: none;
+    }
+    .active .mob-nav-icons[name="close-outline"]
+    {
+        display: block;
+    }
+    .mob-navbar
+    {
+        display: block;
+        z-index: 999;
+        cursor: pointer;  
+    }
+    .mob-navbar .mob-nav-icons
+    {
+        font-size: 3.2rem;
+    }
+}
