@@ -30,6 +30,13 @@ const Trusted = () =>
             justify-content: center;
             /* padding: 10rem 0 0 0; */
         }
+        @media(max-width:780px)
+        {
+            .brand-section-slider
+            {
+                gap: 0.5rem;
+            }  
+        }
     `
     return(
         <>

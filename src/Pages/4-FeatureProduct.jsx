@@ -86,7 +86,21 @@ const Wrapper = styled.section`
     }
 }
 
-
+@media(max-width:600px)
+{
+    .grid-three-column
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }  
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) 
+{
+    .grid-three-column
+    {
+        gap: 0;
+    } 
+}
 `
 
 

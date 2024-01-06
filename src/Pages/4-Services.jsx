@@ -55,6 +55,22 @@ const Services = () =>
             align-items: center;
             padding: 15px;
         }
+
+        @media(max-width:780px)
+        {
+            .container
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0;
+            }
+            .grid-three-column
+            {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1rem;
+            }  
+        }
     `
     return(
         <>
@@ -83,7 +99,7 @@ const Services = () =>
                     <div className="services-3">
                         <div>
                             <GiReceiveMoney className="icon" / >
-                            <h3> 30-Days Easy <br /> Return Policy </h3>
+                            <h3> 30-Days Easy Return </h3>
                         </div>
                     </div>
 

@@ -41,11 +41,11 @@ const Wrapper = styled.section`
     }
     .grid 
     {
-        display: flex;
-        gap: 3rem;
-        /* display: grid; */
-        /* gap: 12rem; */
-        /* justify-content: center; */
+        /* display: flex;
+        gap: 3rem; */
+        display: grid;
+        gap: 12rem;
+        justify-content: center;
     }
     .grid-two-column 
     {
@@ -123,11 +123,20 @@ const Wrapper = styled.section`
         .grid-two-column 
         {
             grid-template-columns: repeat(1, 1fr);
+            gap: 0;
         }
         .hero-section-image img
         {
             min-width: 10rem;
-            height: 14rem;
+            height: 20rem;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) 
+    {
+        .grid
+        {
+            gap: 0;
         }
     }
 
