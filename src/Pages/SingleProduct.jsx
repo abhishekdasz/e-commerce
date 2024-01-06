@@ -148,6 +148,15 @@ const Wrapper = styled.section`
         align-items: center;
     }
 
+    @media(max-width:600px)
+    {
+        .grid-two-column 
+        {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 4rem;
+        }
+    }
+
 `
 
 export default SingleProduct;
