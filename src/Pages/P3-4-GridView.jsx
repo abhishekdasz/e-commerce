@@ -58,6 +58,15 @@ const Wrapper = styled.section`
       transform: scale(1.2);
     }
 }
+
+@media(max-width:600px)
+{
+  .grid-three-column
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
 `
 
 export default GridView;
