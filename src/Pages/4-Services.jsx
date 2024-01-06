@@ -74,6 +74,10 @@ const Services = () =>
             {
                 flex-direction: column;
             }
+            .services-1, .services-3
+            {
+                padding: 15px 0;
+            }
         }
     `
     return(
@@ -85,7 +89,7 @@ const Services = () =>
                     <div className="services-1">
                         <div>
                             <TbTruckDelivery className="icon" / >
-                            <h3> Super Fast and Free Delivery </h3>
+                            <h3> Super Fast & Free Delivery </h3>
                         </div>
                     </div>
 

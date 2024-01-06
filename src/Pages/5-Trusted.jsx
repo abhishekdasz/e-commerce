@@ -34,7 +34,8 @@ const Trusted = () =>
         {
             .brand-section-slider
             {
-                gap: 0.5rem;
+                gap: 3.5rem;
+                overflow: hidden;
             }  
         }
     `
