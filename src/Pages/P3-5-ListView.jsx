@@ -122,8 +122,12 @@ const Wrapper = styled.section`
         color: #fff;
     }
   }
-  /* @media(max-width:600px)
+  @media(max-width:600px)
   {
+    .grid
+    {
+      padding: 1rem;
+    }
     .card
     {
       flex-direction: column;
@@ -138,7 +142,7 @@ const Wrapper = styled.section`
       margin: 0 2rem;
       margin-bottom: 1rem;
     }
-  } */
+  }
 `
 
 export default ListView;

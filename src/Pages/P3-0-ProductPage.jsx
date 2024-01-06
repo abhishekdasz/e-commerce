@@ -38,7 +38,7 @@ const Wrapper = styled.section`
     {
         display: grid;
         margin: 1rem 0;
-        width: 1000px;
+        width: 100%;
     }
     .grid-filter-column
     {
@@ -53,6 +53,10 @@ const Wrapper = styled.section`
     {
         display: flex;
         flex-direction: column;
+    }
+    @media(max-width:600px)
+    {
+        width: none;
     }
 `
 
