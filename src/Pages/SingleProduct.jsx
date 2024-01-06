@@ -104,7 +104,6 @@ const SingleProduct = () =>
 const Wrapper = styled.section`
 .container 
 {
-    width: 60rem;
     margin: 3rem auto;
 }
     .grid 
@@ -150,12 +149,17 @@ const Wrapper = styled.section`
 
     @media(max-width:600px)
     {
+        padding: 0 0.5rem;
         .grid-two-column 
         {
             grid-template-columns: repeat(1, 1fr);
             gap: 4rem;
         }
-    }
+        .product-warranty-data
+        {
+            margin: 0;
+        }
+    }    
 
 `
 

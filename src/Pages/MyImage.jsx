@@ -70,6 +70,19 @@ const Wrapper = styled.section`
     {
         width: 17rem;
     } */
+
+    @media(max-width:600px)
+    {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+
+        .grid-four-column 
+        {
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
 `
 
 export default MyImage;
