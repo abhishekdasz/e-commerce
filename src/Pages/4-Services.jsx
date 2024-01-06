@@ -70,6 +70,10 @@ const Services = () =>
                 grid-template-columns: repeat(1, 1fr);
                 gap: 1rem;
             }  
+            .services-row-2
+            {
+                flex-direction: column;
+            }
         }
     `
     return(
