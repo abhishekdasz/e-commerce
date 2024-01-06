@@ -17,12 +17,12 @@ const GridView = ({products}) => {
 }
 
 const Wrapper = styled.section`
-    .container
+    /* .container
     {
-        /* max-width: 60rem; */
+        max-width: 60rem;
         margin: 3rem 0rem;
         padding-bottom: 3rem;
-    }
+    } */
     .grid
     {
         display: grid;

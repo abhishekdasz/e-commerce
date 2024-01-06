@@ -37,8 +37,8 @@ const Wrapper = styled.section`
     .container 
     {
         display: grid;
-        max-width: 59rem;
         margin: 1rem 0;
+        width: 1000px;
     }
     .grid-filter-column
     {
